@@ -1,0 +1,23 @@
+task,variant,n,threads,seconds,speedup,efficiency,correct
+sum,reduction,10000000,1,0.008603007,1.026834,1.026834,yes
+sum,reduction,10000000,2,0.004708942,1.875976,0.937988,yes
+sum,reduction,10000000,4,0.003417727,2.584718,0.646180,yes
+sum,reduction,10000000,8,0.003825905,2.308960,0.288620,yes
+sum,reduction,10000000,12,0.012525185,0.705288,0.058774,yes
+# naive_race,N=10000000,run=1,result=-6,expected=-6,correct=yes
+# naive_race,N=10000000,run=2,result=0,expected=-6,correct=NO
+# naive_race,N=10000000,run=3,result=0,expected=-6,correct=NO
+# naive_race,N=10000000,run=4,result=2,expected=-6,correct=NO
+# naive_race,N=10000000,run=5,result=2,expected=-6,correct=NO
+sum,critical,10000000,8,2.946336668,0.002998,0.000375,yes
+sum,reduction,100000000,1,0.101463506,0.974108,0.974108,yes
+sum,reduction,100000000,2,0.046670404,2.117753,1.058876,yes
+sum,reduction,100000000,4,0.034068515,2.901106,0.725277,yes
+sum,reduction,100000000,8,0.029477037,3.352996,0.419124,yes
+sum,reduction,100000000,12,0.054859763,1.801619,0.150135,yes
+# naive_race,N=100000000,run=1,result=0,expected=-5,correct=NO
+# naive_race,N=100000000,run=2,result=5,expected=-5,correct=NO
+# naive_race,N=100000000,run=3,result=0,expected=-5,correct=NO
+# naive_race,N=100000000,run=4,result=-5,expected=-5,correct=yes
+# naive_race,N=100000000,run=5,result=1,expected=-5,correct=NO
+sum,critical,100000000,8,33.835723929,0.002921,0.000365,yes
