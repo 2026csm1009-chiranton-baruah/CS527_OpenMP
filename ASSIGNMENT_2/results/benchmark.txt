@@ -1,0 +1,132 @@
+===== OMP_NUM_THREADS=1 =====
+Target: 777777
+Found: yes
+Index: 777777
+Threads: 1
+Parallel search time: 0.000478 s
+Sorted array: 1 2 3 4 7 8 12 17 18 25 29 33
+Correctness: PASS
+Threads: 1
+Parallel sort time: 0.000023 s
+0: 100000
+1: 100000
+2: 100000
+3: 100000
+4: 100000
+5: 100000
+6: 100000
+7: 100000
+8: 100000
+9: 100000
+Total counted: 1000000 (expected 1000000)
+Threads: 1
+Parallel histogram time: 0.000709 s
+Input (4 x 5):
+  1   2   3   4   5 
+  6   7   8   9  10 
+ 11  12  13  14  15 
+ 16  17  18  19  20 
+Transpose (5 x 4):
+  1   6  11  16 
+  2   7  12  17 
+  3   8  13  18 
+  4   9  14  19 
+  5  10  15  20 
+Correctness: PASS
+Threads: 1
+Parallel transpose time: 0.000026 s
+Valid 3x3 averaging-filter output (3x3):
+  70.00   80.00   90.00 
+ 120.00  130.00  140.00 
+ 170.00  180.00  190.00 
+First output expected 70.00: PASS
+Threads: 1
+Parallel convolution time: 0.000005 s
+===== OMP_NUM_THREADS=2 =====
+Target: 777777
+Found: yes
+Index: 777777
+Threads: 2
+Parallel search time: 0.000858 s
+Sorted array: 1 2 3 4 7 8 12 17 18 25 29 33
+Correctness: PASS
+Threads: 2
+Parallel sort time: 0.000350 s
+0: 100000
+1: 100000
+2: 100000
+3: 100000
+4: 100000
+5: 100000
+6: 100000
+7: 100000
+8: 100000
+9: 100000
+Total counted: 1000000 (expected 1000000)
+Threads: 2
+Parallel histogram time: 0.001512 s
+Input (4 x 5):
+  1   2   3   4   5 
+  6   7   8   9  10 
+ 11  12  13  14  15 
+ 16  17  18  19  20 
+Transpose (5 x 4):
+  1   6  11  16 
+  2   7  12  17 
+  3   8  13  18 
+  4   9  14  19 
+  5  10  15  20 
+Correctness: PASS
+Threads: 2
+Parallel transpose time: 0.000223 s
+Valid 3x3 averaging-filter output (3x3):
+  70.00   80.00   90.00 
+ 120.00  130.00  140.00 
+ 170.00  180.00  190.00 
+First output expected 70.00: PASS
+Threads: 2
+Parallel convolution time: 0.000239 s
+===== OMP_NUM_THREADS=4 =====
+Target: 777777
+Found: yes
+Index: 777777
+Threads: 4
+Parallel search time: 0.001200 s
+Sorted array: 1 2 3 4 7 8 12 17 18 25 29 33
+Correctness: PASS
+Threads: 4
+Parallel sort time: 0.000447 s
+0: 100000
+1: 100000
+2: 100000
+3: 100000
+4: 100000
+5: 100000
+6: 100000
+7: 100000
+8: 100000
+9: 100000
+Total counted: 1000000 (expected 1000000)
+Threads: 4
+Parallel histogram time: 0.000762 s
+Input (4 x 5):
+  1   2   3   4   5 
+  6   7   8   9  10 
+ 11  12  13  14  15 
+ 16  17  18  19  20 
+Transpose (5 x 4):
+  1   6  11  16 
+  2   7  12  17 
+  3   8  13  18 
+  4   9  14  19 
+  5  10  15  20 
+Correctness: PASS
+Threads: 4
+Parallel transpose time: 0.000508 s
+Valid 3x3 averaging-filter output (3x3):
+  70.00   80.00   90.00 
+ 120.00  130.00  140.00 
+ 170.00  180.00  190.00 
+First output expected 70.00: PASS
+Threads: 4
+Parallel convolution time: 0.001585 s
